@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-26T01:14:51.490901" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="D:\Sanbercode\QA Batch 63\Sanber63-Mobile\Suites\login.robot">
+<test id="s1-t1" name="User should be able to login with valid data" line="34">
+<kw name="Open Flight Application">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=14.0</arg>
+<arg>deviceName=RRCT401SNQK</arg>
+<arg>appPackage=com.example.myapplication</arg>
+<arg>appActivity=com.example.myapplication.MainActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-26T01:14:51.708650" elapsed="9.901865"/>
+</kw>
+<status status="PASS" start="2025-01-26T01:14:51.708130" elapsed="9.902511"/>
+</kw>
+<kw name="Verify Home Screen Appears">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-26T01:15:02.702636" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]</msg>
+<arg>locator=//android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-26T01:15:01.611192" elapsed="1.091676"/>
+</kw>
+<status status="PASS" start="2025-01-26T01:15:01.610945" elapsed="1.092170"/>
+</kw>
+<kw name="Close Flight Application">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-01-26T01:15:02.704529" elapsed="0.954136"/>
+</kw>
+<status status="PASS" start="2025-01-26T01:15:02.703898" elapsed="0.955085"/>
+</kw>
+<status status="PASS" start="2025-01-26T01:14:51.707500" elapsed="11.952268"/>
+</test>
+<status status="PASS" start="2025-01-26T01:14:51.492757" elapsed="12.169583"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
